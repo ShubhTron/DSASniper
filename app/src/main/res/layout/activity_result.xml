@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz Completed!"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/easyScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy Level Score: 0"
+            android:textSize="20sp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/mediumScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Level Score: 0"
+            android:textSize="20sp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/hardScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hard Level Score: 0"
+            android:textSize="20sp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/totalScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Score: 0"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:padding="12dp"/>
+
+        <!-- Certificate Preview -->
+        <ImageView
+            android:id="@+id/certificateView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray"/>
+
+        <!-- Download Certificate Button -->
+        <Button
+            android:id="@+id/downloadCertificateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download Certificate"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Restart Quiz Button -->
+        <Button
+            android:id="@+id/restartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restart Quiz"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
